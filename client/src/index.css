@@ -1,0 +1,59 @@
+@import url('https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500..700&display=swap');
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@keyframes fadeDown {
+    0% {
+        opacity: 0;
+        transform: translateY(-50px); /* Adjusted translateY value */
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.animate-fade-down {
+    animation: fadeDown 1s ease forwards;
+}
+
+.animate-once {
+    animation-iteration-count: 1;
+}
+
+.animate-fill-both {
+    animation-fill-mode: both;
+}
+
+
+@keyframes slideFromAbove {
+    0% {
+        opacity: 0;
+        transform: translateY(-0,0px); /* Start position: above the viewport */
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0); /* End position: at its original position */
+    }
+}
+
+.appear-from-above {
+    animation: slideFromAbove 1s ease forwards;
+}
+
+@keyframes float {
+    0% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(-10px); /* Adjusted translateY value */
+    }
+    100% {
+        transform: translateY(0);
+    }
+}
+
+.animate-float {
+    animation: float 2s ease-in-out infinite; /* Adjusted animation duration */
+}
