@@ -26,7 +26,7 @@ const HomePage = () => {
       {/* Content Section */}
       <div className="flex ml-14 flex-row-reverse">
         <div className="">
-          <img className="w-1/2 h-auto mr-8 float-right mt-[-12rem] animate-float" src="src\assets\main.png" alt="Home Image" />
+          <img className="w-1/2 h-auto mr-8 float-right mt-[-12rem] animate-float" src="/assets/main.png" alt="Home Image" />
         </div>
         <NextBtn  />
         <Electronics />
