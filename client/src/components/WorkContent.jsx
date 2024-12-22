@@ -13,7 +13,7 @@ const WorkContent = () => {
   useEffect(() => {
     const fetchService = async () => {
       try {
-        const response = await axios.get("http://localhost:5000/api/services");
+        const response = await axios.get("https://cityserve-backendser.onrender.com/api/services");
         setServices(response.data);
         setFilteredServices(response.data); // Initialize filtered services with all services
       } catch (error) {
