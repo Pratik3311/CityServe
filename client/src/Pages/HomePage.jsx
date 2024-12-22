@@ -7,7 +7,7 @@ import Footer from "../components/Footer";
 import "../../src/index.css";
 import { button } from "@material-tailwind/react";
 import { Navigate, useNavigate } from "react-router-dom";
-import image from '../../public/assets/main.png'
+
 const HomePage = () => {
   const bannerImages = [
     "src/assets/banner1.jpg",
@@ -26,7 +26,7 @@ const HomePage = () => {
       {/* Content Section */}
       <div className="flex ml-14 flex-row-reverse">
         <div className="">
-          <img className="w-1/2 h-auto mr-8 float-right mt-[-12rem] animate-float" src={image} alt="Home Image" />
+          <img className="w-1/2 h-auto mr-8 float-right mt-[-12rem] animate-float" src="src\assets\main.png" alt="Home Image" />
         </div>
         <NextBtn  />
         <Electronics />
