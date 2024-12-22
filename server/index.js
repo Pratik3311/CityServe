@@ -6,7 +6,7 @@ const cors = require("cors")
 const app = express();
 
 connectDB();
-app.use(cors());
+app.use(cors({origin: 'https://cityserve.onrender.com/'}));
 app.use(express.json());
 
 // Use the routes from the routes file
